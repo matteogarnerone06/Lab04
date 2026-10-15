@@ -31,7 +31,7 @@ class Stand:
     def __lt__(self, altro_stand):
         return self._prezzo_base < altro_stand.prezzo_base
     def __str__(self):
-        return f"{self.codice} - {self.superficie} - {self.padiglione} - {self.prezzo_base}"
+        return f"Codice: {self.codice} - Superficie: {self.superficie}mq - Padiglione: {self.padiglione} - Prezzo: {self.prezzo_base:.2f}€"
 class Stand_p(Stand):
     def __init__(self, codice, superficie, padiglione, prezzo_base, prezzo_aggiuntivo):
         super().__init__(codice, superficie, padiglione, prezzo_base)
@@ -52,4 +52,4 @@ class Stand_p(Stand):
         return self._prezzo_base < altro_stand.prezzo_base
 
     def __str__(self):
-        return f"{self.codice} - {self.superficie} - {self.padiglione} - {self.prezzo_base}"
+        return f"Codice: {self.codice} - Superficie: {self.superficie}mq - Padiglione: {self.padiglione} - Prezzo: {self.prezzo_base:.2f}€"

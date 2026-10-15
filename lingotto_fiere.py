@@ -53,7 +53,7 @@ class LingottoFiere:
 
         if oggetto_stand and oggetto_espositore:
             oggetto_stand.espositore1 = codice_espositore
-            oggetto_espositore.stand_assegnatogli = oggetto_stand
+            oggetto_espositore.stand_assegnatogli = oggetto_stand.codice
 
     def elenca_espositori(self):
         """Stampa l'elenco degli espositori mostrando, per ognuno, lo stand a cui è associato, quando applicabile """
